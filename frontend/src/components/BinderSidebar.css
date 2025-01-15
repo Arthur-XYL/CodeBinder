@@ -1,0 +1,52 @@
+.sidebar-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Keeps the scrolling within the sidebar */
+    border-radius: 6px;
+    margin-right: 2px;
+}
+
+.divider {
+    width: 2px;
+    cursor: col-resize;
+    height: 100%; /* Ensure it spans the full height of its container */
+    background-color: black;
+    opacity: 0;
+    margin-right: 2px;
+}
+
+.divider:hover {
+    opacity: 1; /* Style for the divider when hovered */
+}
+
+.sidebar-heading {
+    margin: 6px 6px 0;
+}
+
+.return-button {
+    margin: 3px 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.add-button {
+    margin: 3px 6px 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    width: calc(100% - 12px);
+}

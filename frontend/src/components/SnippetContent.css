@@ -1,0 +1,48 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Take up the remaining space */
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden; /* To prevent overall overflow */
+}
+
+.content-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content-heading {
+    flex-grow: 1;
+    /* Space between heading and menu */
+    margin: 6px 12px 0 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content-body {
+    flex-grow: 1;
+    margin: 3px 6px 6px;
+}
+
+.snippet-editor {
+    width: 100%; /* Full width of parent */
+    height: 100%; /* Full height of parent */
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    font-size: 16px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Include padding and border in width/height */
+    overflow-y: auto; /* Vertical scrolling if necessary */
+    overflow-x: auto; /* Horizontal scrolling if necessary */
+    white-space: nowrap; /* Prevent text from wrapping */
+    resize: none; /* Disable resizing */
+}
+
+.snippet-editor:focus {
+    outline: none;
+}

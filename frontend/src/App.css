@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  font-family: serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightslategrey;
+  position: fixed;
+}
+
+

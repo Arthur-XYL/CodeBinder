@@ -1,0 +1,63 @@
+.menu-bar-container {
+    display: flex;
+    flex-direction: column;
+    width: 72px; /* Width of the menu bar */
+    height: 100%;
+    position: fixed; /* Fixed position */
+    background-color: lightslategrey; /* Background color */
+    overflow-y: auto;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    padding:6px;
+    cursor: pointer;
+}
+
+.menu-item:last-child {
+    margin-bottom: 6px;
+}
+
+.menu-icon {
+    margin-bottom: 0; /* Space between icon and text */;
+}
+
+.menu-text {
+    font-size: 12px; /* Example: set font size */
+    text-align: center;
+}
+
+.active {
+    background-color: #aaa; /* Example: change background for active item */
+}
+
+.bottom-icons {
+    margin-top: auto; /* Pushes the wrapper to the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the icons */
+    margin-bottom: 6px;
+}
+
+.logout-button:hover {
+    cursor: pointer;
+}
+
+.add-icon {
+    margin: 6px; /* Space between add icon and user profile */
+    cursor: pointer;
+    /* Add any specific styles for the add icon size, etc. */
+}
+
+.user-profile {
+    margin: 6px;
+    border-radius: 6px;
+    align-self: center; /* Center the profile icon horizontally */
+    cursor: pointer;
+}

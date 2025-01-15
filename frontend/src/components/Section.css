@@ -1,0 +1,88 @@
+/* Sidebar */
+.section-container {
+    flex-grow: 1; /* Take up remaining space */
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Full viewport height */
+    margin: 6px 6px 6px 72px;
+    overflow: auto;
+}
+
+.heading-divider {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 3px 6px;
+}
+
+.item-list {
+    overflow-y: auto; /* Make it scrollable */
+    flex-grow: 1;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 6px;
+    background-color: #f0f0f0; /* Example background color */
+}
+
+.item:first-child {
+    margin-top: 6px;
+}
+
+.item:last-child {
+    margin-bottom: 6px; /* Sets bottom margin of the last item */
+}
+
+.item:hover {
+    background-color: #e9ecef; /* Lighter color on hover */
+    cursor: pointer;
+}
+
+.item.selected {
+    background-color: dodgerblue; /* Highlight color for selected item */
+    color: white;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow this container to grow and fill space */
+    max-width: calc(100% - 12px); /* Reserve space for dropdown */
+}
+
+.item-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.kebab-menu {
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+    visibility: hidden; /* Hide kebab menu by default */
+}
+
+.kebab-menu span {
+    display: inline-block;
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+.kebab-menu.dropdown-toggle::after {
+    display: none;
+}
+
+
+.item:hover .kebab-menu,
+.item.selected .kebab-menu {
+    visibility: visible; /* Show kebab menu on hover and when selected */
+}
+
